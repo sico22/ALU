@@ -1,0 +1,238 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jan  4 13:34:38 2023
+# Process ID: 23424
+# Current directory: C:/Users/alexa/ALU16/ALU16.runs/synth_1
+# Command line: vivado.exe -log alu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu.tcl
+# Log file: C:/Users/alexa/ALU16/ALU16.runs/synth_1/alu.vds
+# Journal file: C:/Users/alexa/ALU16/ALU16.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source alu.tcl -notrace
+Command: synth_design -top alu -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10708
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1110.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/alu.vhd:45]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/alexa/MIPS/MIPS.srcs/sources_1/new/SSD.vhd:28' bound to instance 'display' of component 'SSD' [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/alu.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/alexa/MIPS/MIPS.srcs/sources_1/new/SSD.vhd:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/alexa/MIPS/MIPS.srcs/sources_1/new/SSD.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (1#1) [C:/Users/alexa/MIPS/MIPS.srcs/sources_1/new/SSD.vhd:35]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/alexa/MIPS/MIPS.srcs/sources_1/new/MPG.vhd:27' bound to instance 'mpg1' of component 'MPG' [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/alu.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'MPG' [C:/Users/alexa/MIPS/MIPS.srcs/sources_1/new/MPG.vhd:33]
+WARNING: [Synth 8-614] signal 'enable_reg' is read in the process but is not in the sensitivity list [C:/Users/alexa/MIPS/MIPS.srcs/sources_1/new/MPG.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (2#1) [C:/Users/alexa/MIPS/MIPS.srcs/sources_1/new/MPG.vhd:33]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/multiplicator.vhd:35' bound to instance 'mul' of component 'multiplier' [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/alu.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'multiplier' [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/multiplicator.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'multiplier' (3#1) [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/multiplicator.vhd:41]
+INFO: [Synth 8-3491] module 'divider' declared at 'C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/divider.vhd:6' bound to instance 'div' of component 'divider' [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/alu.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'divider' [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/divider.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'divider' (4#1) [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/divider.vhd:12]
+WARNING: [Synth 8-614] signal 'a' is read in the process but is not in the sensitivity list [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/alu.vhd:114]
+WARNING: [Synth 8-614] signal 'b' is read in the process but is not in the sensitivity list [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/alu.vhd:114]
+WARNING: [Synth 8-614] signal 'multiply_res' is read in the process but is not in the sensitivity list [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/alu.vhd:114]
+WARNING: [Synth 8-614] signal 'div_res' is read in the process but is not in the sensitivity list [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/alu.vhd:114]
+WARNING: [Synth 8-614] signal 'res' is read in the process but is not in the sensitivity list [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/alu.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'alu' (5#1) [C:/Users/alexa/ALU16/ALU16.srcs/sources_1/new/alu.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1152.801 ; gain = 42.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1152.801 ; gain = 42.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1152.801 ; gain = 42.508
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1152.801 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/alexa/MIPS/MIPS.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [C:/Users/alexa/MIPS/MIPS.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/alexa/MIPS/MIPS.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/alu_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/alu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1256.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1256.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1256.727 ; gain = 146.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1256.727 ; gain = 146.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1256.727 ; gain = 146.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1256.727 ; gain = 146.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   34 Bit       Adders := 32    
+	   2 Input   32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input   34 Bit        Muxes := 32    
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1256.727 ; gain = 146.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1256.727 ; gain = 146.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1256.727 ; gain = 146.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1269.891 ; gain = 159.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1278.512 ; gain = 168.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1278.512 ; gain = 168.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1278.512 ; gain = 168.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1278.512 ; gain = 168.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1278.512 ; gain = 168.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1278.512 ; gain = 168.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    66|
+|3     |LUT1   |    50|
+|4     |LUT2   |   125|
+|5     |LUT4   |    31|
+|6     |LUT5   |     9|
+|7     |LUT6   |    50|
+|8     |FDRE   |    67|
+|9     |IBUF   |     7|
+|10    |OBUF   |    27|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1278.512 ; gain = 168.219
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1278.512 ; gain = 64.293
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1278.512 ; gain = 168.219
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1290.520 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1294.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1294.969 ; gain = 184.676
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alexa/ALU16/ALU16.runs/synth_1/alu.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file alu_utilization_synth.rpt -pb alu_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  4 13:35:12 2023...
